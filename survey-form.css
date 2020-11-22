@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+    --primary-color: linear-gradient(to right, rgba(57, 72, 103, 0.6), rgba(48, 43, 98, 0.6), rgba(155, 164, 180, 0.6));
+    --secondary-color: rgba(20, 39, 78, 0.8);
+    --text-color: #f1f6f9;
+    --button-color: #db6400;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: var(--primary-color), url("images/survey-form-background.jpeg") center/cover no-repeat;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: var(--text-color);
+    letter-spacing: 0.7px;
+}
+
+#title {
+    font-size: 2em;
+    margin: 50px 0px 8px;
+}
+
+#description {
+    font-size: 1.2em;
+    margin: 10px 0px 40px;
+}
+
+/*=============================
+    default grid set up -> mobile first
+  ===============================*/
+#survey-form {
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+    padding: 40px;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin: 30px 0px;
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.form-group .modify {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    font-size: 0.8em;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #495057;
+}
+
+#input-radio label,
+#input-checkbox label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#input-radio input,
+#input-checkbox input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.form-group textarea {
+    padding: 10px;
+    min-height: 120px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    width: 100%;
+    height: 50px;
+    background: var(--button-color);
+    color: var(--text-color);
+    font-size: 1.3em;
+}
+
+/*=============================
+    larger screens
+  ===============================*/
+@media only screen and (min-width: 1000px) {
+    #survey-form {
+        max-width: 45%;
+    }
+}
