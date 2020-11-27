@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+    --primary-color: rgb(238, 238, 238);
+    --secondary-color: rgb(0, 0, 0);
+    --icon-color: rgb(255, 140, 0);
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*=============================
+    default grid set up -> mobile first
+  ===============================*/
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    background: var(--primary-color);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    background: var(--primary-color);
+}
+
+#header img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    margin: 10px 0px;
+}
+
+#header nav ul {
+    height: 80px;
+    width: 40vw;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header .nav-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#starting {
+    margin: 150px 0px 20px;
+    text-align: center;
+}
+#form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form input[type="email"] {
+    margin: 15px 0px;
+    width: 250px;
+    height: 30px;
+    padding: 0px 5px;
+}
+
+#form input[type="submit"] {
+    width: 150px;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: #f1c40f;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#form input[type="submit"]:hover {
+    background: #f1970f;
+}
+
+#features .icons {
+    display: none;
+}
+
+#features .desc {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+#how-it-works {
+    margin: 50px 0px;
+    display: flex;
+    height: 315px;
+    justify-content: center;
+}
+
+#how-it-works > iframe {
+    width: 80%;
+    height: auto;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+}
+
+.product div {
+    width: 100%;
+    padding: 15px 0px;
+    background: rgb(221, 221, 221);
+    font-weight: 700;
+}
+
+.product ul {
+    list-style: none;
+    margin: 10px 0px;
+    padding: 0;
+}
+
+.product ul li {
+    padding: 5px 0px;
+}
+
+.product button {
+    background: #f1c40f;
+    border: none;
+    width: 100px;
+    padding: 10px 0px;
+    margin: 25px 0px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(221, 221, 221);
+    padding: 10px;
+}
+
+#footer > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5px 0px;
+}
+
+#footer > ul > li > a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0px 5px;
+}
+
+/*=============================
+    larger screens
+  ===============================*/
+@media only screen and (min-width: 790px) {
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #starting {
+        margin: 90px 0px 20px;
+    }
+
+    #features .grid {
+        display: flex;
+    }
+
+    #features .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        height: 125px;
+        color: var(--icon-color);
+    }
+
+    #features .desc {
+        text-align: start;
+        width: 80vw;
+        height: 125px;
+    }
+
+    #content {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    #how-it-works > iframe {
+        width: 560px;
+        height: 315px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #pricing {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .product {
+        width: calc(100% / 3);
+    }
+}

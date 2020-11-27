@@ -12,7 +12,9 @@ body {
     padding: 0;
     min-width: 100vw;
     min-height: 100vh;
-    background: var(--primary-color), url("images/survey-form-background.jpeg") center/cover no-repeat;
+    background: var(--primary-color),
+        url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg") center/cover
+            no-repeat;
     text-align: center;
     font-family: "Lato", sans-serif;
     color: var(--text-color);
