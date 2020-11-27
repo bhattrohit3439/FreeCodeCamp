@@ -16,12 +16,12 @@ For a list of completed projects, see below.
 
 ### 1. Responsive Web Design Certification
 
--   [Tribute Page](https://codepen.io/bhattrohit3439/pen/XWjWOaK)
+-   [Tribute Page](https://codepen.io/bhattrohit3439/full/XWjWOaK)
     -   HTML
     -   CSS
--   [Survey Form](https://codepen.io/bhattrohit3439/pen/jOMOdvE)
+-   [Survey Form](https://codepen.io/bhattrohit3439/full/jOMOdvE)
     -   HTML
     -   CSS
--   [Product Landing Page](https://codepen.io/bhattrohit3439/pen/ExgxrGX)
+-   [Product Landing Page](https://codepen.io/bhattrohit3439/full/ExgxrGX)
     -   HTML
     -   CSS
