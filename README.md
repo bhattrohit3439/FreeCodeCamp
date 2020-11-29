@@ -25,3 +25,7 @@ For a list of completed projects, see below.
 -   [Product Landing Page](https://codepen.io/bhattrohit3439/full/ExgxrGX)
     -   HTML
     -   CSS
+-   [Technical Documentation Page](https://codepen.io/bhattrohit3439/full/GRjgBVJ)
+    -   HTML
+    -   CSS
+    -   JAVASCRIPT
