@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+    background-color: #fff;
+    color: #333;
+    display: grid;
+    max-width: 100vw;
+    min-height: 100vh;
+    grid-template-rows: 40px 100px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "info"
+        "navbar"
+        "main-doc";
+}
+
+#info {
+    grid-area: info;
+    text-align: center;
+}
+
+#main-doc {
+    grid-area: main-doc;
+    padding: 20px 20px;
+}
+
+#navbar {
+    grid-area: navbar;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: #eee;
+}
+
+#navbar ul {
+    display: none;
+    flex-direction: column;
+    padding: 5px 20px 0px;
+    height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 2px solid #1f88b4;
+}
+
+#navbar button {
+    display: flex;
+    width: 99%;
+    margin: 15px auto 0px;
+    color: #1f88b4;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+}
+
+#navbar button svg {
+    fill: currentColor;
+    margin-left: 5px;
+    vertical-align: bottom;
+    height: 20px;
+    width: 20px;
+}
+
+#navbar li {
+    list-style: none;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid #fff;
+}
+
+ul {
+    padding-left: 40px;
+    margin-bottom: 24px;
+}
+
+p,
+li {
+    margin-bottom: 24px;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.main-section header {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin: 60px 0px 30px;
+    padding-top: 40px;
+    border-top: 3px solid #3d7e9a;
+}
+
+a {
+    text-decoration: none;
+    color: #1f88b4;
+}
+
+code,
+pre {
+    color: #1f88b4;
+    background-color: rgba(220, 220, 220, 0.5);
+}
+
+.example {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        grid-template-columns: 25% 1fr;
+        grid-template-rows: 40px 1fr;
+        grid-template-areas:
+            "navbar info"
+            "navbar main-doc";
+    }
+
+    #navbar {
+        position: fixed;
+        width: 25%;
+        height: 100%;
+        border-right: solid 5px #1f88b4;
+    }
+
+    #navbar button {
+        display: none;
+    }
+
+    #navbar header {
+        height: 50px;
+        margin: 10px 0px 20px;
+        text-align: center;
+    }
+
+    #navbar ul {
+        display: flex;
+        height: 88%;
+    }
+}
